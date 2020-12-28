@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML+CSS</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,12 +20,12 @@
   <nav>
     <div><p><a href="https://bajita19720814.github.io">ホーム</a></p></div>
     <div data-id="programing">
-      <p>色々なプログラミング</p>
+      <p>試そう！プログラミング</p>
       <section id="programing">
         <ul>
-          <li><a href="">HTML+CSS:製作中</a></li>
-          <li><a href="">Scratch:制作中</a></li>
-          <li><a href="">JavaScript:製作中</a></li>
+          <li><a href="https://bajita19720814.github.io/sitemake/.">HTML+CSS</a></li>
+          <li><a href="https://bajita19720814.github.io/scratch/.">Scratch</a></li>
+          <li><a href="https://bajita19720814.github.io/javascript/.">JavaScript</a></li>
           <li><a href="">PHP:製作中</a></li>
       </section>
     </div>
@@ -36,12 +38,122 @@
           <li><a href="https://bajita19720814.github.io/cardgame/.">
           神経衰弱ゲーム</a></li>
           <li><a href="https://bajita19720814.github.io/dategame/.">時間と日付のゲーム</a></li>
+          <li><a href="https://bajita19720814.github.io/busgame/.">バスの乗客ゲーム</a></li>
           <li><a href="https://bajita19720814.github.io/shootinggame/.">シューティングゲーム</a></li>
         </ul>
       </section>
     </div>
   </nav> 
   <main>
+    <article>
+      <h1>HTML&CSS</h1>
+      <section class="try">
+        <h2>メモ帳機能を使ってブラウザに文字を表示してみよう！</h2>
+        <p>メモ帳を開いて、下のコードをコピー、ペーストします。改行や空白もそのままコピーしてください。
+        </p>
+        <hr>
+        <pre>
+          <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ja"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;HTMLをためしてみよう&lt;/title&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  はじめてのHTML+CSS!
+&lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+        <hr>
+        <div>
+        <p>上部のファイルを開いて名前を付けて保存するを選びます。</p>
+        <img src="img/html2.png" alt="" class="html2">
+        </div>
+        <div>
+          <p>保存場所はデスクトップ上にします。ファイル名はなんでもいいですが、拡張子の<strong>.html</strong>をつけます。ここでは<strong>HTML.html</strong> としました。ファイルの種類は<strong>すべてのファイル</strong>を選択します。いちばん下の文字コードは<strong>UTF-8</strong>を選択し、保存します。</p>
+          <img src="img/html3.png" alt="" class="html3">
+        </div>
+        <div>
+          <p> 保存されたファイルは設定によってアイコンがちがいます。</p>
+          <img src="img/html4.png" alt="" class="html4">
+          <img src="img/html5.png" alt="" class="html5">
+          <img src="img/html6.png" alt="" class="html6">
+          <img src="img/html7.png" alt="" class="html7">
+        </div>
+        <div>
+          <p>
+            <img src="img/html5.png" alt="" class="html5">
+            <img src="img/html6.png" alt="" class="html6">
+            の場合はアイコンをダブルクリックすると、ブラウザが開き、表示されます。 <br>         
+          タブに<strong>HTMLをためしてみよう</strong>、本文に<strong>はじめてのHTML+CSS!</strong>と表示されています。</p>
+          <img src="img/html10.png" alt="" class="html10">
+        </div>
+        <div> 
+          <p>そうでない場合はブラウザを開き、上部のタブの部分にファイルをドラッグ＆ドロップします。</p>
+          <img src="img/html9.png" alt="" class="html9">
+        </div> 
+        <div>
+          <p>あるいはファイルを右クリックして<strong>プログラムから開く</strong>からブラウザを指定します。</p>
+          <img src="img/html8.png" alt="" class="html8">
+        </div>
+        <div>
+          <p>ブラウザは小さくしておいて、HTML.htmlファイルをメモ帳で開いてみましょう。赤丸の部分を好きな文章に変更し、上書き保存して、ブラウザをリロード<i class="material-icons md-18" class="reload">
+            refresh
+          </i>してみてください。表示内容が変わりましたね。</p>
+          <img src="img/html11.png" alt="" class="html11">
+      </div>
+        <h2>さっきの文字の色や大きさを変えてみよう！</h2>
+        <p>新しくメモ帳を開いて下のコードをコピー、ペーストして同じようにデスクトップに保存してください。必ずデスクトップに保存し、ファイル名は　style.css　にしてください。</p>
+        <hr>
+        <pre>
+          <code>
+body {
+  margin: 0;
+  padding: 32px;
+  font-size: 32px;
+  background-color: mistyrose;
+  color: darkgreen;
+  border-bottom: 1px solid darkgreen;
+}
+          </code></pre>
+          <hr>
+          <div>
+            <p>先ほどのブラウザをリロードしてください。背景、文字や大きさが変わって、線が出ましたね。（ブラウザで開いているファイルは<strong>.html</strong>で保存しているファイルです）</p>
+            <img src="img/css2.png">
+          </div>
+          <div>
+            <p><img src="img/css1.png" class="css1">をダブルクリックして開きます。<strong>font-size</strong>は文字の大きさ、<strong>background-color</strong>は背景の色を<strong>color</strong>は文字の色を、<strong>border-bottom</strong>は下線を指定しています。スペースは変えないように注意して大きさや色を変えてみてください。</p>
+            <img src="img/css3.png">
+          </div>
+          <div>
+            <p>メモ帳を上書き保存して、ブラウザをリロードしてください。それぞれ変わっていますね。</p>
+            <img src="img/css5.png">
+          </div>
+      </section>
+      <section class="learnmore">
+        <h2>無料の学習サイトを活用しよう</h2>
+        <p>dotinstallとprogateが有名です。私はdotinstallを利用しています。HTMLのレッスンだけでなく、JavaScriptの学習でもHTML+CSSのコードをかくので、JavaScriptも学びたい場合は同時に学習していってもいいと思います。</p>
+        <div>
+          <a href="https://dotinstall.com"><img src="img/dotinstall.png" class="dotinstall"></a>
+          <p>動画で学べます。無料で公開されているレッスンもあり、動画を視聴するだけなら会員登録せずに見ることができます。</p>
+        </div>
+        <div>
+          <a href="https://prog-8.com"><img src="img/progate.png" class="progate"></a>
+          <p>イラスト中心のスライドで学べます。無料で公開されているレッスンもありますが、会員登録は必要です。ブラウザ上でコードを書いて結果を確認できます。</p>
+        </div>
+        <!-- <h2>本も活用しよう</h2>
+        <div>
+          <img src="img/bookWebdesign.png" class="book">
+          <p></p>
+        </div>
+        <div>
+          <img src="img/bookHTML&CSS.png" class="book">
+          <p></p>
+        </div>     -->
+      </section>
+    </article>
 
   </main>
   <footer>
@@ -50,3 +162,4 @@
   <script src="main.js"></script>
 </body>
 </html>
+
