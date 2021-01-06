@@ -91,7 +91,7 @@ header {
 }
 header h1 {
   position: absolute;
-  font-size: 18px;
+  font-size: 16px;
   bottom: 0px;
   right: 16px;
 }
@@ -148,7 +148,7 @@ footer {
 }
 main {
   margin: 0;
-  padding: 32px;
+  padding: 32px calc((100% - 320px) / 2);
   background-color: mistyrose;
 }
 article {
@@ -212,7 +212,15 @@ article img{
   background-color: #fafafa;
   border-radius: 3px;
 }
-@media (min-width:510px) {
+@media (min-width: 384px) {
+  header h1 {
+    font-size: 18px;
+  }
+  main {
+    padding: 32px;
+  }
+}
+@media (min-width: 510px) {
   nav {
     display: flex;
   }
@@ -230,6 +238,9 @@ article img{
   }  
 }
 @media (min-width: 600px) {
+  header h1 {
+    right: calc((100% - 600px) / 2 + 16px);
+  }
   .try div {
     display: flex;
     justify-content: flex-end;
@@ -242,6 +253,10 @@ article img{
 
 }
 @media (min-width: 950px) {
+  
+  nav {
+    padding-left: calc((100% - 950px) / 2);
+  }
   article {
     width: 870px;
     margin: 0 auto;
